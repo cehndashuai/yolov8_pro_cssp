@@ -3,7 +3,7 @@ from ultralytics.models.yolo import YOLO
 from thop import profile, clever_format
 
 # Config
-model_path = r"E:\Python_project\yolo\ultralytics-main\ultralytics-main\runs\train\spacecraft_yolo122\weights\best.pt"
+model_path = r"...\best.pt"
 input_shape = (3, 640, 640)
 
 # Load model
@@ -76,4 +76,5 @@ print("-" * 50)
 
 # Simple summary
 print(f"\nSummary: Total Params {total_params / 1e6:.2f} M, GFLOPs {gflops:.2f} G")
+
 print("Analysis completed!")
